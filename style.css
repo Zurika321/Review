@@ -15,6 +15,9 @@ table {
 tr:nth-child(even) {
   height: 5px;
 }
+td:nth-child(even) {
+  padding-left: 2px;
+}
 h1,
 h2,
 h3,
@@ -23,6 +26,7 @@ h5,
 h6 {
   margin: 0%;
 }
+
 /* Khung */
 .Khung_gioi_thieu {
   position: fixed;
@@ -37,24 +41,6 @@ h6 {
   font-size: 16px;
   width: 100%;
   z-index: 2;
-}
-.Khung_anh {
-  border: 2px ridge rgb(0, 238, 255);
-  border-radius: 50%;
-  width: 80px;
-  height: 80px;
-  overflow: hidden;
-  position: fixed;
-  z-index: 999;
-  transform: translateX(0%);
-  transition: all 0.3s;
-}
-.Khung_anh:hover,
-.Khung_anh:focus {
-  border-radius: 0;
-  width: 200px;
-  height: 350px;
-  transform: translateX(-60px) translateY(-60px);
 }
 .content {
   background-color: white;
@@ -77,26 +63,49 @@ h6 {
   cursor: pointer;
   font-size: 10px;
 }
-.buttonnav:focus {
-  box-shadow: 2px 2px 5px inset rgb(86, 86, 86), 3px 3px 20px white;
+.buttonnav:focus,
+.buttonnav.focus {
+  outline: none; /* Loại bỏ border mặc định khi focus */
+  box-shadow: 2px 2px 5px inset rgb(0, 0, 0), 3px 3px 20px white;
 }
 
 /* Nội Dung Trang*/
+
 /* INFORMATION */
 .INFORMATION {
+  display: block;
   font-size: 20px;
 }
 .INFORMATION h3 {
   text-align: center;
   margin-top: 20px;
 }
-.INFORMATION p {
-  margin: 20px 0 5px 10px;
+.INFORMATION h6 {
+  margin: 20px 0 5px 15px;
   color: blue;
   font-size: 16px;
 }
+.Khung_anh {
+  border: 2px ridge rgb(0, 238, 255);
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  overflow: hidden;
+  position: fixed;
+  z-index: 999;
+  transform: translateX(0%);
+  transition: all 0.3s;
+}
+.Khung_anh:hover,
+.Khung_anh:focus {
+  border-radius: 0;
+  width: 200px;
+  height: 350px;
+  transform: translateX(-60px) translateY(-60px);
+}
 .icon {
   font-size: 35px;
+  cursor: pointer;
 }
 .icon:first-child {
   color: blue;
@@ -113,7 +122,6 @@ h6 {
   width: 30px;
   height: 35px;
 }
-
 .container {
   display: flex;
   justify-content: center;
@@ -122,9 +130,69 @@ h6 {
   gap: 5px;
   margin-top: 5px;
 }
-
 .icon:not(:hover) {
   color: grey;
 }
+.some_information {
+  overflow-y: auto;
+  height: 200px;
+}
+
 /* GAME */
+.khunganh2 {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-left: 5px;
+}
+.khunganh3 {
+  width: 30px;
+  height: 30px;
+  margin-left: 5px;
+}
+.table2 {
+  margin-top: -10px;
+}
+.table2 td:nth-child(3) {
+  height: 40px;
+}
+.table3 {
+  margin-top: 10px;
+}
+.table3 tr {
+  height: 30px;
+}
+.table3 td {
+  font-size: 15px;
+}
+.table3 td:nth-child(3n-1) {
+  font-size: 25px;
+}
+.GAME h6 {
+  margin: 20px 0 5px 15px;
+  color: blue;
+  font-size: 16px;
+}
+.some_games {
+  overflow-y: auto;
+  height: 200px;
+}
+.btncopy {
+  margin-bottom: 10px;
+  width: 60px;
+  height: 20px;
+}
+
 /* PROJECT */
+.PROJECT {
+  max-width: 300px;
+}
+.PROJECT h6 {
+  margin: 20px 0 5px 15px;
+  color: blue;
+  font-size: 16px;
+}
+.some_projects {
+  overflow-y: auto;
+  height: 200px;
+}
