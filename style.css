@@ -1,0 +1,130 @@
+body {
+  background-image: url(nen3.gif);
+  background-size: cover;
+}
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+table {
+  margin: 0;
+  padding: 0;
+  margin-right: 20px;
+}
+tr:nth-child(even) {
+  height: 5px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0%;
+}
+/* Khung */
+.Khung_gioi_thieu {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  width: 100%;
+  z-index: 2;
+}
+.Khung_anh {
+  border: 2px ridge rgb(0, 238, 255);
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  overflow: hidden;
+  position: fixed;
+  z-index: 999;
+  transform: translateX(0%);
+  transition: all 0.3s;
+}
+.Khung_anh:hover,
+.Khung_anh:focus {
+  border-radius: 0;
+  width: 200px;
+  height: 350px;
+  transform: translateX(-60px) translateY(-60px);
+}
+.content {
+  background-color: white;
+  padding: 25px 0px 0px 0px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+  max-width: 99%;
+}
+
+/* nút chuyển trang */
+.navbutton {
+  margin-top: 5px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.buttonnav {
+  border: none;
+  width: auto;
+  height: 30px;
+  cursor: pointer;
+  font-size: 10px;
+}
+.buttonnav:focus {
+  box-shadow: 2px 2px 5px inset rgb(86, 86, 86), 3px 3px 20px white;
+}
+
+/* Nội Dung Trang*/
+/* INFORMATION */
+.INFORMATION {
+  font-size: 20px;
+}
+.INFORMATION h3 {
+  text-align: center;
+  margin-top: 20px;
+}
+.INFORMATION p {
+  margin: 20px 0 5px 10px;
+  color: blue;
+  font-size: 16px;
+}
+.icon {
+  font-size: 35px;
+}
+.icon:first-child {
+  color: blue;
+}
+.icon:nth-child(3),
+.icon:nth-child(5) {
+  color: red;
+}
+.icon2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-right: 1px solid grey;
+  width: 30px;
+  height: 35px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(235, 235, 235);
+  gap: 5px;
+  margin-top: 5px;
+}
+
+.icon:not(:hover) {
+  color: grey;
+}
+/* GAME */
+/* PROJECT */
