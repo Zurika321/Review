@@ -67,9 +67,30 @@ function copyText(noidung, sttbtn) {
 function icon() {
   alert("mìk làm icon cho đẹp chứ ko muốn lộ thông tin quá nhiều :))");
 }
-// mới vô
+
+//loading hết nội dung
 window.onload = function () {
-  document.getElementById("btnINFORMATION").click();
-  document.getElementById("btnINFORMATION").focus();
+  const $percent = document.querySelector(".count .percent");
+  const $circle = document.querySelector(".circle");
+  var main = document.getElementById("main");
+  var progressBar = document.getElementById("loading-progress");
+
+  var interval = setInterval(function () {
+    if (document.readyState === "complete") {
+      clearInterval(interval);
+      setTimeout(function () {
+        progressBar.style.display = "none";
+        main.style.display = "block";
+        btnINFORMATION.click();
+        btnINFORMATION.focus();
+        vitrikhunganh();
+      }, 500);
+    }
+    var progress =
+      ((document.documentElement.scrollTop + window.innerHeight) /
+        document.documentElement.scrollHeight) *
+      100;
+    $percent.innerHTML = progress;
+    $circle.style.background = `conic-gradient(from 0deg at 50% 50%, #6f7bf7 0%, #9bf8f4 ${progress}%, #101012 ${progress}%)`;
+  }, 100);
 };
-vitrikhunganh();
