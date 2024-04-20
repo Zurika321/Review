@@ -13,32 +13,28 @@ function vitrikhunganh() {
   khunganh.style.left = (windowWidth - widthkhunganh) / 2 + "px";
 }
 
-// Giữ focus cho navbutton
-var allElements = document.querySelectorAll("*");
-allElements.forEach(function (element) {
-  element.addEventListener("mousedown", function (event) {
-    if (!event.target.closest(".navbutton")) {
-      event.preventDefault();
-    }
-  });
-});
-
 //chuyển trang
 var INFORMATION = document.getElementById("INFORMATION");
 var GAME = document.getElementById("GAME");
 var PROJECT = document.getElementById("PROJECT");
 var trang = [INFORMATION, GAME, PROJECT];
+var btnINFORMATION = document.getElementById("btnINFORMATION");
+var btnGAME = document.getElementById("btnGAME");
+var btnPROJECT = document.getElementById("btnPROJECT");
+var btntrang = [btnINFORMATION, btnGAME, btnPROJECT];
 function openTrang(num) {
   for (let i = 0; i < trang.length; i++) {
-    if (i == num) {
-      trang[num].style.display = "block";
-      if (num != 0) {
+    if (i === num) {
+      trang[i].style.display = "block";
+      btntrang[i].classList.add("effbtntrang");
+      if (num !== 0) {
         khunganh.style.display = "none";
       } else {
         khunganh.style.display = "block";
       }
     } else {
       trang[i].style.display = "none";
+      btntrang[i].classList.remove("effbtntrang");
     }
   }
   vitrikhunganh();
@@ -82,7 +78,6 @@ window.onload = function () {
         progressBar.style.display = "none";
         main.style.display = "block";
         btnINFORMATION.click();
-        btnINFORMATION.focus();
         vitrikhunganh();
       }, 500);
     }
