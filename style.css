@@ -92,7 +92,7 @@ h6 {
 
 /* content */
 #main {
-  display: none;
+ visibility: hidden;
 }
 /* Khung */
 .Khung_gioi_thieu {
