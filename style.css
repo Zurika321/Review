@@ -27,6 +27,73 @@ h6 {
   margin: 0%;
 }
 
+/* loading */
+.circle {
+  width: 180px;
+  height: 180px;
+  background: conic-gradient(
+    from 0deg at 50% 50%,
+    #6f7bf7 0%,
+    #9bf8f4 50%,
+    #101012 50%
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100px;
+  box-shadow: 4px 4px 16px #000000bf, -4px -4px 16px #ffffff1a;
+  animation: spin 1s infinite linear;
+  position: relative;
+  color: white;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.count {
+  content: " ";
+  width: 174px;
+  height: 174px;
+  background: #1d1e22;
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100px;
+  box-shadow: 4px 4px 16px #000000bf inset, -4px -4px 16px #ffffff1a inset;
+  animation: spin 1s infinite linear reverse;
+}
+.percent {
+  font-family: sans-serif;
+  font-size: 4em;
+}
+#loading-progress {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  width: 100%;
+  z-index: 2;
+}
+
+/* content */
+#main {
+  display: none;
+}
 /* Khung */
 .Khung_gioi_thieu {
   position: fixed;
@@ -42,6 +109,7 @@ h6 {
   width: 100%;
   z-index: 2;
 }
+
 .content {
   background-color: white;
   padding: 25px 0px 0px 0px;
@@ -95,6 +163,7 @@ h6 {
   z-index: 999;
   transform: translateX(0%);
   transition: all 0.3s;
+  display: none;
 }
 .Khung_anh:hover,
 .Khung_anh:focus {
@@ -139,6 +208,9 @@ h6 {
 }
 
 /* GAME */
+.GAME {
+  display: none;
+}
 .khunganh2 {
   width: 60px;
   height: 60px;
@@ -186,6 +258,7 @@ h6 {
 /* PROJECT */
 .PROJECT {
   max-width: 300px;
+  display: none;
 }
 .PROJECT h6 {
   margin: 20px 0 5px 15px;
