@@ -76,7 +76,7 @@ window.onload = function () {
       clearInterval(interval);
       setTimeout(function () {
         progressBar.style.display = "none";
-        main.style.display = "block";
+        main.style.visibility = "visible";
         btnINFORMATION.click();
         vitrikhunganh();
       }, 500);
