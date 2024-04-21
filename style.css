@@ -10,7 +10,7 @@ img {
 table {
   margin: 0;
   padding: 0;
-  margin-right: 20px;
+  margin-right: 5px;
 }
 tr:nth-child(even) {
   height: 5px;
@@ -163,7 +163,7 @@ h6 {
 .INFORMATION {
   display: block;
   font-size: 20px;
-  min-width: 270px;
+  min-width: 255px;
 }
 .INFORMATION h3 {
   text-align: center;
@@ -289,7 +289,7 @@ h6 {
 .some_projects {
   overflow-y: auto;
   height: 200px;
-  width: 270px;
+  width: 255px;
 }
 
 /* SKILLS */
@@ -381,4 +381,5 @@ h6 {
 }
 .btn_leave_message:hover {
   box-shadow: 2px 2px 10px #fe59eb;
+  margin-bottom: 5px;
 }
