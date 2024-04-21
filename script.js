@@ -17,11 +17,25 @@ function vitrikhunganh() {
 var INFORMATION = document.getElementById("INFORMATION");
 var GAME = document.getElementById("GAME");
 var PROJECT = document.getElementById("PROJECT");
-var trang = [INFORMATION, GAME, PROJECT];
+var SKILLS = document.getElementById("SKILLS");
+var EXPERIENCE = document.getElementById("EXPERIENCE");
+var CONTACT = document.getElementById("CONTACT");
+var trang = [INFORMATION, GAME, PROJECT, SKILLS, EXPERIENCE, CONTACT];
 var btnINFORMATION = document.getElementById("btnINFORMATION");
 var btnGAME = document.getElementById("btnGAME");
 var btnPROJECT = document.getElementById("btnPROJECT");
-var btntrang = [btnINFORMATION, btnGAME, btnPROJECT];
+var btnSKILLS = document.getElementById("btnSKILLS");
+var btnEXPERIENCE = document.getElementById("btnEXPERIENCE");
+var btnCONTACT = document.getElementById("btnCONTACT");
+var btntrang = [
+  btnINFORMATION,
+  btnGAME,
+  btnPROJECT,
+  btnSKILLS,
+  btnEXPERIENCE,
+  btnCONTACT,
+];
+var table2 = document.querySelector(".table2");
 function openTrang(num) {
   for (let i = 0; i < trang.length; i++) {
     if (i === num) {
@@ -29,8 +43,10 @@ function openTrang(num) {
       btntrang[i].classList.add("effbtntrang");
       if (num !== 0) {
         khunganh.style.display = "none";
+        table2.style.display = "block";
       } else {
         khunganh.style.display = "block";
+        table2.style.display = "none";
       }
     } else {
       trang[i].style.display = "none";
@@ -89,3 +105,8 @@ window.onload = function () {
     $circle.style.background = `conic-gradient(from 0deg at 50% 50%, #6f7bf7 0%, #9bf8f4 ${progress}%, #101012 ${progress}%)`;
   }, 100);
 };
+
+//open chat messenger
+function openChatMessage() {
+  window.open("https://m.me/nam.kha.2005");
+}
