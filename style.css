@@ -115,7 +115,8 @@ h6 {
   padding: 0;
   border-radius: 10px;
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
-  max-width: 99%;
+  min-width: 250px;
+  max-width: 300px;
 }
 
 /* nút chuyển trang */
@@ -138,11 +139,31 @@ h6 {
 }
 
 /* Nội Dung Trang*/
-
+.table2 {
+  margin-top: -10px;
+  background-color: rgb(235, 235, 235);
+  width: 100%;
+  display: none;
+}
+.table2 td:first-child {
+  width: 0;
+  height: 0;
+}
+.table2 td:nth-child(3) {
+  height: 40px;
+  width: 150px;
+}
+.khunganh2 {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-left: 15px;
+}
 /* INFORMATION */
 .INFORMATION {
   display: block;
   font-size: 20px;
+  min-width: 270px;
 }
 .INFORMATION h3 {
   text-align: center;
@@ -151,11 +172,11 @@ h6 {
 .INFORMATION h6 {
   margin: 20px 0 5px 15px;
   color: blue;
-  font-size: 16px;
+  font-size: 14px;
 }
 .Khung_anh {
-  border: 2px ridge rgb(0, 238, 255);
   border-radius: 50%;
+  border: 2px ridge rgb(0, 238, 255);
   width: 80px;
   height: 80px;
   overflow: hidden;
@@ -171,6 +192,18 @@ h6 {
   width: 200px;
   height: 350px;
   transform: translateX(-60px) translateY(-60px);
+}
+.blurred-background,
+.table2 {
+  width: 100%;
+  background-image: url(nen.jpg);
+  background-size: cover;
+  color: white;
+}
+.blurred-background img,
+.table2 img {
+  border: 2px ridge rgb(0, 238, 255);
+  border-radius: 50%;
 }
 .icon {
   font-size: 35px;
@@ -204,36 +237,17 @@ h6 {
 }
 .some_information {
   overflow-y: auto;
-  height: 200px;
+  height: 160px;
 }
 
 /* GAME */
 .GAME {
   display: none;
 }
-.khunganh2 {
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  margin-left: 15px;
-}
 .khunganh3 {
   width: 30px;
   height: 30px;
   margin-left: 5px;
-}
-.table2 {
-  margin-top: -10px;
-  background-color: rgb(235, 235, 235);
-  width: 100%;
-}
-.table2 td:first-child {
-  width: 0;
-  height: 0;
-}
-.table2 td:nth-child(3) {
-  height: 40px;
-  width: 150px;
 }
 .table3 {
   margin-top: 10px;
@@ -275,4 +289,96 @@ h6 {
 .some_projects {
   overflow-y: auto;
   height: 200px;
+  width: 270px;
+}
+
+/* SKILLS */
+.SKILLS {
+  max-width: 300px;
+  display: none;
+  font-size: 20px;
+}
+.SKILLS h6 {
+  margin: 20px 0 5px 15px;
+  color: blue;
+  font-size: 16px;
+}
+.some_skills {
+  overflow-y: auto;
+  height: 200px;
+}
+
+/* EXPERIENCE */
+.EXPERIENCE {
+  max-width: 300px;
+  display: none;
+}
+.EXPERIENCE h6 {
+  margin: 20px 0 5px 15px;
+  color: blue;
+  font-size: 16px;
+}
+.some_experience {
+  overflow-y: auto;
+  height: 200px;
+}
+.tableEXPERIENCE {
+  font-size: 16px;
+}
+.tableEXPERIENCE td {
+  content: "a";
+  height: 15px;
+}
+.fa-circle {
+  font-size: 10px;
+  color: rgb(150, 0, 150);
+}
+.fa-slash {
+  margin-top: 10px;
+  margin-left: -5px;
+  border-radius: 5px;
+  font-size: 50px;
+  color: rgb(235, 0, 235);
+  transform: rotate(52deg) translateX(10px) translateY(-23.5px);
+}
+.textgray {
+  color: gray;
+}
+.textright {
+  text-align: right;
+}
+
+/* CONTACT */
+.CONTACT {
+  max-width: 300px;
+  display: none;
+}
+.CONTACT h6 {
+  margin: 20px 0 5px 15px;
+  color: blue;
+  font-size: 16px;
+}
+.some_contact {
+  overflow-y: auto;
+  height: 200px;
+}
+.btn_leave_message {
+  background: conic-gradient(
+    from 0deg at 50% 50%,
+    #db6cfa 0%,
+    #ff575c 33%,
+    #429aff 66%,
+    #db6cfa 100%
+  );
+  color: white;
+  display: block;
+  margin: auto;
+  cursor: pointer;
+  border-radius: 5px;
+  border: none;
+  height: 25px;
+  width: 150px;
+}
+.btn_leave_message:hover {
+  box-shadow: 2px 2px 10px #fe59eb;
 }
