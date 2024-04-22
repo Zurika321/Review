@@ -158,12 +158,11 @@ h6 {
   height: 60px;
   border-radius: 50%;
   margin-left: 15px;
-  transition: all 0.3s;
 }
 .khunganh2:hover,
 .khunganh2:focus {
   border-radius: 0;
-  width: 220px;
+  width: 215px;
   height: 350px;
   position: fixed;
   transform: translateX(0px) translateY(-45px);
