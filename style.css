@@ -158,14 +158,15 @@ h6 {
   height: 60px;
   border-radius: 50%;
   margin-left: 15px;
+  transition: all 0.3s;
 }
 .khunganh2:hover,
 .khunganh2:focus {
   border-radius: 0;
-  width: 200px;
+  width: 220px;
   height: 350px;
   position: fixed;
-  transform: translateX(5px) translateY(-45px);
+  transform: translateX(0px) translateY(-45px);
 }
 /* INFORMATION */
 .INFORMATION {
@@ -178,7 +179,7 @@ h6 {
   margin-top: 0;
 }
 .INFORMATION h6 {
-  margin: 20px 0 5px 15px;
+  margin: 15px 0 5px 15px;
   color: blue;
   font-size: 14px;
 }
@@ -270,7 +271,7 @@ h6 {
   font-size: 25px;
 }
 .GAME h6 {
-  margin: 20px 0 5px 15px;
+  margin: 15px 0 5px 15px;
   color: blue;
   font-size: 16px;
 }
@@ -290,7 +291,7 @@ h6 {
   display: none;
 }
 .PROJECT h6 {
-  margin: 20px 0 5px 15px;
+  margin: 15px 0 5px 15px;
   color: blue;
   font-size: 16px;
 }
@@ -307,7 +308,7 @@ h6 {
   font-size: 20px;
 }
 .SKILLS h6 {
-  margin: 20px 0 5px 15px;
+  margin: 15px 0 5px 15px;
   color: blue;
   font-size: 16px;
 }
@@ -322,7 +323,7 @@ h6 {
   display: none;
 }
 .EXPERIENCE h6 {
-  margin: 20px 0 5px 15px;
+  margin: 15px 0 5px 15px;
   color: blue;
   font-size: 16px;
 }
@@ -347,7 +348,7 @@ h6 {
   height: 100px;
   border-radius: 5px;
   background-color: rgb(235, 0, 235);
-  transform: translateX(3px) translateY(-5px);
+  transform: translateX(3.25px) translateY(-5px);
 }
 .textgray {
   color: gray;
