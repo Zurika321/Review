@@ -76,8 +76,12 @@ function copyText(noidung, sttbtn) {
 }
 
 // click icon
-function icon() {
-  alert("mìk làm icon cho đẹp chứ ko muốn lộ thông tin quá nhiều :))");
+function icon(link) {
+  if (link == "facebook") {
+    window.open("https://facebook.com/nam.kha.2005");
+  } else if (link == undefined) {
+    alert("mìk làm icon cho đẹp chứ ko muốn lộ thông tin quá nhiều :))");
+  }
 }
 
 //loading hết nội dung
